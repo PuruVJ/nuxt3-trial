@@ -1,5 +1,13 @@
 <template>
-  {{ JSON.stringify(data) }}
+  <Head>
+    <Title>Hello world</Title>
+  </Head>
+
+  <pre>
+  <code>
+{{ JSON.stringify(data, null, 2) }}
+  </code>
+  </pre>
 </template>
 
 <script lang="ts" setup>
