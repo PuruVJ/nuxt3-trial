@@ -1,9 +1,11 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@netlify/functions': ^1.0.0
   nuxt3: ^3.0.0-27491650.3964727
 
 devDependencies:
+  '@netlify/functions': 1.0.0
   nuxt3: 3.0.0-27491650.3964727
 
 packages:
