@@ -5,4 +5,8 @@ export default defineNuxtConfig({
   experimental: {
     reactivityTransform: true,
   },
+  typescript: {
+    shim: false,
+    strict: true,
+  },
 });
