@@ -1,3 +1,11 @@
+<script lang="ts" setup>
+const count = $ref(0);
+
+const { data, pending } = $(useFetch('/api/hello'));
+
+watchEffect(() => console.log({ data }));
+</script>
+
 <template>
   <div>
     <Head>
@@ -18,11 +26,3 @@
   </pre>
   </div>
 </template>
-
-<script lang="ts" setup>
-const count = $ref(0);
-
-const { data, pending } = $(useLazyFetch('/api/hello'));
-
-watchEffect(() => console.log({ pending }));
-</script>
