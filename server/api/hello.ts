@@ -1,5 +1,5 @@
-export default defineEventHandler(({ context }) => {
+export default defineEventHandler(({}) => {
   return {
-    api: 'works',
+    api: Math.random(),
   };
 });
