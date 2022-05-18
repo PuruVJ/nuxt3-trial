@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   experimental: {
     reactivityTransform: true,
   },
+  nitro: {
+    prerender: {
+      routes: ['/'],
+    },
+  },
   typescript: {
     shim: false,
     strict: true,
